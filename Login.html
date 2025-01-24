@@ -1,0 +1,72 @@
+
+<!-- saved from url=(0038)http://localhost/bankid/auth/login.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Lägg till app-ikon direkt här -->
+    <link rel="icon" href="http://localhost/bankid/bankid/images/mobile-icon-logo.png" sizes="192x192">
+    
+    <!-- För iOS, så att appen har rätt ikon -->
+    <link rel="apple-touch-icon" href="http://localhost/bankid/bankid/images/mobile-icon-logo.png">
+
+    <style>
+        /* Huvudstil för hela sidan */
+        body {
+            background-color: #1A4558;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Ordna innehållet vertikalt */
+            height: 100vh;
+            text-align: center;
+            overflow: hidden; /* Förhindrar scrollning */
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        /* För att dölja standardfönstret på mobilen (som adressfältet) */
+        html, body {
+            height: 100%;
+        }
+
+        /* Fixa så att appen kan köras i fullskärmsläge */
+        @media (max-width: 600px) {
+            body {
+                overflow: hidden;
+            }
+        }
+
+        /* Loggan ovanför texten */
+        .logo {
+            max-width: 150px;
+            margin-top: 50px; /* Justera avståndet mellan toppen och loggan */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Lägg till loggan längst upp och centrerad -->
+    <img src="./Login_files/bankid-logo-first-screen.png" class="login-bankid" alt="Login Image">
+
+    <!-- Texten centrerad under loggan -->
+    <h1>Aktivera BankID eller Kontrollera ID-kort</h1>
+    <p>Läs mer om att aktivera BankID på din banks hemsida eller app</p>
+
+
+</body></html>
