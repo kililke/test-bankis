@@ -22,6 +22,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column; /* Ordna innehållet vertikalt */
             height: 100vh;
             text-align: center;
             overflow: hidden; /* Förhindrar scrollning */
@@ -29,7 +30,7 @@
 
         h1 {
             font-size: 36px;
-            margin-bottom: 20px;
+            margin-top: 20px;
         }
 
         p {
@@ -51,17 +52,18 @@
         /* Loggan ovanför texten */
         .logo {
             max-width: 150px;
-            margin-bottom: 30px;
+            margin-top: 50px; /* Justera avståndet mellan toppen och loggan */
         }
     </style>
 </head>
 <body>
-    <!-- Lägg till loggan direkt på sidan -->
+    <!-- Lägg till loggan längst upp och centrerad -->
     <img src="./index_files/bankid-logo-first-screen.png" class="login-bankid" alt="Login Image">
 
     
-    <h1>Hello, user!</h1>
-    <p>Välkommen till din app!</p>
+    <!-- Texten centrerad under loggan -->
+    <h1>Aktivera BankID eller Kontrollera ID-kort</h1>
+    <p>Läs mer om att aktivera BankID på din banks hemsida eller app</p>
 
 
 </body></html>
