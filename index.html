@@ -8,11 +8,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
-    <!-- Lägg till app-ikon direkt här -->
-    <link rel="icon" href="http://localhost/bankid/bankid/images/mobile-icon-logo.png" sizes="192x192">
-    
-    <!-- För iOS, så att appen har rätt ikon -->
-    <link rel="apple-touch-icon" href="http://localhost/bankid/bankid/images/mobile-icon-logo.png">
+    <!-- Lägg till en app-ikon -->
+    <link rel="icon" href="./index_files/bankid-logo-first-screen.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="./index_files/bankid-logo-first-screen.png">
 
     <style>
         /* Huvudstil för hela sidan */
@@ -57,6 +55,34 @@
             max-width: 150px;
             margin-top: 50px; /* Justera avståndet mellan toppen och loggan */
         }
+
+        /* Knappstil för QR-kod-knappen */
+        .qr-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            padding: 15px 20px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .qr-button:hover {
+            background-color: #45a049;
+        }
+
+        /* QR-ikon */
+        .qr-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
@@ -66,6 +92,12 @@
     <!-- Texten centrerad under loggan -->
     <h1>Aktivera BankID eller Kontrollera ID-kort</h1>
     <p>Läs mer om att aktivera BankID på din banks hemsida eller app</p>
+
+    <!-- QR-kod-knapp -->
+    <button class="qr-button">
+        <img src="./index_files/qr-icon.png" alt="QR Icon" class="qr-icon"> 
+        Skanna QR-kod
+    </button>
 
 
 </body></html>
